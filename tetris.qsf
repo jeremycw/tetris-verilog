@@ -1,0 +1,116 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 132 02/25/2009 SJ Full Version
+# Date created = 14:40:33  November 26, 2009
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		tetris_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C35F672C6
+set_global_assignment -name TOP_LEVEL_ENTITY tetris
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:40:33  NOVEMBER 26, 2009"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.0
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_N2 -to clk
+set_location_assignment PIN_G26 -to drop
+set_location_assignment PIN_A7 -to h_sync
+set_location_assignment PIN_W26 -to left
+set_location_assignment PIN_E10 -to r[9]
+set_location_assignment PIN_F11 -to r[8]
+set_location_assignment PIN_H12 -to r[7]
+set_location_assignment PIN_H11 -to r[6]
+set_location_assignment PIN_A8 -to r[5]
+set_location_assignment PIN_C9 -to r[4]
+set_location_assignment PIN_D9 -to r[3]
+set_location_assignment PIN_G10 -to r[2]
+set_location_assignment PIN_F10 -to r[1]
+set_location_assignment PIN_C8 -to r[0]
+set_location_assignment PIN_P23 -to right
+set_location_assignment PIN_V2 -to start
+set_location_assignment PIN_D8 -to v_sync
+set_location_assignment PIN_D12 -to g[9]
+set_location_assignment PIN_E12 -to g[8]
+set_location_assignment PIN_D11 -to g[7]
+set_location_assignment PIN_G11 -to g[6]
+set_location_assignment PIN_A10 -to g[5]
+set_location_assignment PIN_B10 -to g[4]
+set_location_assignment PIN_D10 -to g[3]
+set_location_assignment PIN_C10 -to g[2]
+set_location_assignment PIN_A9 -to g[1]
+set_location_assignment PIN_B9 -to g[0]
+set_location_assignment PIN_B12 -to b[9]
+set_location_assignment PIN_C12 -to b[8]
+set_location_assignment PIN_B11 -to b[7]
+set_location_assignment PIN_C11 -to b[6]
+set_location_assignment PIN_J11 -to b[5]
+set_location_assignment PIN_J10 -to b[4]
+set_location_assignment PIN_G12 -to b[3]
+set_location_assignment PIN_F12 -to b[2]
+set_location_assignment PIN_J14 -to b[1]
+set_location_assignment PIN_J13 -to b[0]
+set_global_assignment -name MISC_FILE "H:/tetris_verilog/tetris.dpf"
+set_global_assignment -name ENABLE_CLOCK_LATENCY ON
+set_location_assignment PIN_D6 -to blank
+set_location_assignment PIN_N23 -to rotate
+set_location_assignment PIN_B8 -to vga_clk
+set_location_assignment PIN_AE23 -to score[0]
+set_location_assignment PIN_AF23 -to score[1]
+set_location_assignment PIN_AB21 -to score[2]
+set_location_assignment PIN_AC22 -to score[3]
+set_location_assignment PIN_AD22 -to score[4]
+set_location_assignment PIN_AD23 -to score[5]
+set_location_assignment PIN_AD21 -to score[6]
+set_location_assignment PIN_AC21 -to score[7]
+set_location_assignment PIN_AA14 -to score[8]
+set_location_assignment PIN_Y13 -to score[9]
+set_location_assignment PIN_AA13 -to score[10]
+set_location_assignment PIN_AC14 -to score[11]
+set_location_assignment PIN_AD15 -to score[12]
+set_location_assignment PIN_AE15 -to score[13]
+set_location_assignment PIN_AF13 -to score[14]
+set_location_assignment PIN_AE13 -to score[15]
+set_global_assignment -name VERILOG_FILE tetris_vga.v
+set_global_assignment -name VERILOG_FILE tetris.v
+set_global_assignment -name VERILOG_FILE tetris_blocks.v
+set_global_assignment -name VERILOG_FILE tetris_tb.v
+set_global_assignment -name QIP_FILE pll.qip

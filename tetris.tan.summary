@@ -1,0 +1,86 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.427 ns
+From           : start
+To             : tetris_logic:log|grid:grid|grid[2][0]
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.822 ns
+From           : tetris_logic:log|scorer:sc|score[7]
+To             : score[7]
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -3.736 ns
+From           : rotate
+To             : tetris_logic:log|rotate_buf
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : 4.664 ns
+Required Time  : 50.00 MHz ( period = 20.000 ns )
+Actual Time    : 65.21 MHz ( period = 15.336 ns )
+From           : tetris_logic:log|check_move:chk|row[0]
+To             : tetris_logic:log|grid:grid|grid[3][6]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'pll:pll|altpll:altpll_component|_clk0'
+Slack          : 7.835 ns
+Required Time  : 25.00 MHz ( period = 40.000 ns )
+Actual Time    : N/A
+From           : tetris_logic:log|next_block:nb|type[2]
+To             : tetris_logic:log|grid:grid|d_vga[7]
+From Clock     : clk
+To Clock       : pll:pll|altpll:altpll_component|_clk0
+Failed Paths   : 0
+
+Type           : Clock Hold: 'clk'
+Slack          : 0.391 ns
+Required Time  : 50.00 MHz ( period = 20.000 ns )
+Actual Time    : N/A
+From           : seed[0]
+To             : seed[0]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Hold: 'pll:pll|altpll:altpll_component|_clk0'
+Slack          : 0.526 ns
+Required Time  : 25.00 MHz ( period = 40.000 ns )
+Actual Time    : N/A
+From           : colour_gen:cg|ycount[4]
+To             : colour_gen:cg|ycount[4]
+From Clock     : pll:pll|altpll:altpll_component|_clk0
+To Clock       : pll:pll|altpll:altpll_component|_clk0
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

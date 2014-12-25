@@ -1,0 +1,10 @@
+Warning (10463): Verilog HDL Declaration warning at tetris.v(115): "type" is SystemVerilog-2005 keyword
+Warning (10463): Verilog HDL Declaration warning at tetris.v(207): "type" is SystemVerilog-2005 keyword
+Warning (10268): Verilog HDL information at tetris.v(227): always construct contains both blocking and non-blocking assignments
+Warning (10463): Verilog HDL Declaration warning at tetris.v(286): "type" is SystemVerilog-2005 keyword
+Warning (10463): Verilog HDL Declaration warning at tetris.v(443): "rand" is SystemVerilog-2005 keyword
+Warning (10463): Verilog HDL Declaration warning at tetris.v(443): "type" is SystemVerilog-2005 keyword
+Warning (10463): Verilog HDL Declaration warning at tetris_blocks.v(21): "type" is SystemVerilog-2005 keyword
+Warning (10463): Verilog HDL Declaration warning at tetris_tb.v(26): "type" is SystemVerilog-2005 keyword
+Warning (10463): Verilog HDL Declaration warning at tetris_tb.v(76): "type" is SystemVerilog-2005 keyword
+Warning (10463): Verilog HDL Declaration warning at tetris_tb.v(100): "type" is SystemVerilog-2005 keyword
